@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="./Life.css">
+    <script src="./Life.js" defer></script>
+</head>
+<body>
+    <div class="header">Conway's Game of Life</div>
+    <div class="controls">
+        <div class="buttons">
+            <button id="turnButton">Next Generation</button>
+            <button id="pauseButton">Pause</button>
+            <button id="restartButton">Restart</button>
+            <button id="ShortWait">Short Delay</button>
+            <button id="MedWait">Medium Delay</button>
+            <button id="LongWait">Long Delay</button>
+            <button id="gosperGun">Gosper Glider Gun</button>
+        </div>
+        <h3 id="GenCount">Generation: 0</h3>
+    </div>
+    <div>
+        <div id="wrapper" class="wrapper"></div>
+    </div>
+</body>
+</html>
+
+<!-- Simple Conway's Game of Life. 
+Game not handled well when pieces hit the edge
+of the board -->
